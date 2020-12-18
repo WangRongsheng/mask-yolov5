@@ -37,3 +37,7 @@ python detect.py --weights runs/exp0/weights/best.pt --source file.mp4  # video
 
 python detect.py --weights runs/exp0/weights/best.pt --source path/  # directory
 ```
+
+## yolov5部署
+
+[https://github.com/WangRongsheng/mask-yolov5-fastapi](https://github.com/WangRongsheng/mask-yolov5-fastapi)
