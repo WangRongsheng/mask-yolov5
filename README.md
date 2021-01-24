@@ -45,3 +45,17 @@ python detect.py --weights runs/exp0/weights/best.pt --source path/  # directory
 ## yolov5部署
 
 [https://github.com/WangRongsheng/mask-yolov5-fastapi](https://github.com/WangRongsheng/mask-yolov5-fastapi)
+
+## yolov5连接手机进行检测
+
+1. 安卓/IOS下载`IP摄像头`；
+2. 记住app里面提供的`ip地址`；
+3. 打开yolov5项目，执行命令：
+```python
+python detect.py --weights runs/exp0/weights/best.pt --source http://admin:admin@+ip地址
+
+举例：
+python detect.py --weights runs/exp0/weights/best.pt --source http://admin:admin@192.168.1.186:8081
+```
+
+参考：[yolov5目标检测连接手机摄像头实现方法](https://www.bilibili.com/video/BV1Bz4y1S7za)
